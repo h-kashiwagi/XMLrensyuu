@@ -1,0 +1,77 @@
+DOMによるXMLの操作
+
+.NETFrameworkでDOMを使うためには
+XmlDocumentクラスを使う
+
+new XmlDocument()
+
+XmlDocument.Loadメソッドを使って
+ストリーム、ファイル、URLからXMLを読み出す
+Load(ストリーム)
+Load(ファイ名)
+Load(URL文字列)
+
+例
+XmlDocument myDoc = new XmlDocument();
+myDoc.Load(@"C:\Data\Sample.xml");  //ファイルパスの書き方
+
+※DOMではXML文書のすべての構成要素をノードととらえる
+一つ一つのノードは
+XmlNodeオブジェクトとして表現
+
+
+XmlDocument.Loadメソッドを実行して、XML文書を読み出すと、ノードツリーが作成される
+→１番上位のノードは、ドキュメントルートでドキュメントルートはXmlDocumentオブジェクト自体
+※XmlDcumentクラスは、XmlNodeクラスのサブクラス(子クラス)
+
+<Artist>東京<!--コメント-->事変</Artist>
+上記の場合、Artist要素を示すXmlNodeの子ノードとして3つのノードが存在する
+
+
+〇ノードの種類を取り出す方法
+XmlNode.NodeTypeプロパティ（XmlNodeType列挙体）で取得
+
+・Attribute　属性　id="〇"
+・CDATA　CDATAセクション　<![CDATA[〇〇]]>
+・DcumentType　ドキュメントタイプ　<!DOCTYPE 〇〇>
+・Document ドキュメント
+・Element　要素　<item>　←htmlにおけるタグのような感じ
+・EntityReference 実体参照 &num;
+・Whitespace マークアップ空間
+・XmlDelection　XML宣言　<?xml version="1.0"?>
+
+ノード名はNameプロパティ
+ノード内容はValueプロパティ
+によって取得できる
+
+Elementノード（要素ノード）から取得するときは
+要素の名前＝Nameプロパティ
+要素の内容＝InterTextプロパティ　※Valueではない
+
+XmlDelectionノード（XML宣言ノード）
+要素の名前＝なし
+要素の内容＝Valueプロパティ
+
+例
+<Company>TT Infomation<![CDATA[& System Corp.]]></Company>
+Company要素ノードの子ノードは、TextノードとCDATAの２つですが、
+InterTextプロパティを利用すれば、これらをまとめて
+TT　Infomation & System Crop.
+をいう文字列を取得できます。
+
+
+ 
+〇ノードをたどる
+p113
+XmlDocument.DocumentElementプロパティ
+
+XmlDocument myDoc = new XmlDocument();
+myDoc.Load("Cdlist.xml");
+XmlNode currentNode = myDoc.DocumentElement.FirstChild;  //XmlDocumentクラス内にあるDocumentElementプロパティ＝XmlElement？
+//XmlElement（myDoc.DocumentElement）のFirstChildプロパティになる　
+//二重メソッドではなく二重プロパティ
+//XmlElement型の値は実質XmlNodeオブジェクト（XmlNodeを継承）なので格納できる？
+while (currentNode != null)
+{
+    currentNode = currentNode.NextSibling;
+ }

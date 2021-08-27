@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContactList>
+	<Person ID="0001" xmlns:pns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+		<pns:Name>相沢一郎</pns:Name>
+		<pns:Age>27</pns:Age>
+	</Person>
+</ContactList>

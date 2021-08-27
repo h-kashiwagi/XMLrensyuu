@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<messageList>
+  <message>
+	  <time>モーニング</time>
+	  <content>おはようございます</content>
+  </message>
+  <message>
+	  <time>日中</time>
+	  <content>こんにちは</content>
+  </message>
+</messageList>

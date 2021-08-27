@@ -1,0 +1,16 @@
+■DBサーバー
+SQL Server DeveloperEditoin(開発者用)
+▼サーバー名
+DESKTOP-0LV4LSL\MSSQLDEVELOP
+▼接続文字列
+Server=localhost;Database=master;Trusted_Connection=True;
+▼インスタンス名
+MSSQLSERVER
+→MSSQLDEVELOP
+▼SQL管理者
+DESKTOP-0LV4LSL\h-kashiwagi
+▼データベースエンジン 認証モード?
+混合モード ←Windows認証モードとSQL Server認証モードが有効になる
+パスワード：h-kashiwagi
+▼ポート
+8391

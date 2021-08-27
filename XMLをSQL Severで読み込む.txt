@@ -1,0 +1,1 @@
+https://docs.microsoft.com/ja-jp/sql/relational-databases/xml/load-xml-data?view=sql-server-ver15

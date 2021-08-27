@@ -1,0 +1,3 @@
+DOMを使った方法　「Document Object Model」
+SAXを使った方法　「Simple API for XML」
+LINQを使った方法

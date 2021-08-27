@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<messageList>
+	<message time="モーニング" content="おはようございます">
+    </message>
+	<message time="日中" content="こんにちは">
+	</message>
+	<message>おはようございます&lt;太郎さん</message>
+	<message>![CDATA[おはようございます]]</message>
+	<message time="モーニング"/>
+</messageList>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CDList xmlns:cdns="http://www.kkasahara.com/cd">
+	<CD>
+		<Title>大人</Title>
+		<Artist>東京事変</Artist>
+		<ReleaseData>2006-01-25</ReleaseData>
+		<Track No="1">
+			<cdns:Artist>東京事変</cdns:Artist>
+			<cdns:Title>秘密</cdns:Title>
+			<Music>椎名林檎</Music>
+			<Lyrics>椎名林檎</Lyrics>
+			<Arranged>東京事変</Arranged>
+			<Playtime>00:03:52</Playtime>
+		</Track>
+		<Track No="2">
+			<cdns:Artist>東京事変</cdns:Artist>
+			<cdns:Title>喧嘩上等</cdns:Title>
+　　　　　　<Music>椎名林檎</Music>
+			<Lyrics>椎名林檎</Lyrics>
+　　　　　　<Arranged>東京事変</Arranged>
+			<Playtime>00:02:22</Playtime>
+		</Track>
+    </CD>
+</CDList>

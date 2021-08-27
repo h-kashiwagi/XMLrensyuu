@@ -1,0 +1,64 @@
+〇XML宣言
+　・version1.0は.NETFrameworkの標準
+　・文字コードはutf-8またはutf-16
+<?xml version="1.0" encoding="utf-8" ?> 
+
+〇要素
+　・ルート要素（最初の要素）は一つ
+　以下のように同じ要素が複数ある場合は親要素と子要素に分ける
+<?xml version="1.0" encoding="utf-8" ?>
+<messageList>
+  <message>おはようございます</message>
+  <message>こんにちは</message>
+</messageList>
+
+さらに深い階層
+<?xml version="1.0" encoding="utf-8" ?>
+<messageList>
+  <message>
+	  <time>モーニング</time>
+	  <content>おはようございます</content>
+  </message>
+  <message>
+	  <time>日中</time>
+	  <content>こんにちは</content>
+  </message>
+</messageList>
+
+
+〇文字のエスケープ
+「<」は「&lt;」
+<message>おはようございます&lt;太郎さん</message>
+
+〇文字をエスケープする
+<message>![CDATA[おはようございます]]</message>
+
+〇コメント
+<!-- コメント -->
+
+〇別の書き方
+<message time="モーニング" content="おはようございます"></message>
+<message time="モーニング" content="おはようございます"/>
+
+
+〇名前空間
+?xml version="1.0" encoding="utf-8" ?>
+<ContactList>
+	<Person ID="0001">
+		<pns:Name xmlns:pns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+			相沢一郎<!--名前空間URLに属するName要素-->
+		</pns:Name>
+		<pns:Age xmlns:pns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+			27<!--名前空間URLに属するAge要素-->
+		</pns:Age>
+	</Person>
+</ContactList>
+
+
+?xml version="1.0" encoding="utf-8" ?>
+<ContactList>
+	<Person ID="0001" xmlns:pns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+		<pns:Name>相沢一郎</pns:Name>
+		<pns:Age>27</pns:Age>
+	</Person>
+</ContactList>

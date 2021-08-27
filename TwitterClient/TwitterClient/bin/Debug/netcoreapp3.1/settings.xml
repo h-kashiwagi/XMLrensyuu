@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<TwitSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <UserID>userId</UserID>
+  <ScreenName>screenName</ScreenName>
+  <AccessToken>accessToken</AccessToken>
+  <AccessSecretToken>accessSecret</AccessSecretToken>
+</TwitSettings>
