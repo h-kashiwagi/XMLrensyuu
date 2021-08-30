@@ -24,8 +24,9 @@ XmlDocument.Loadメソッドを実行して、XML文書を読み出すと、ノ�
 →１番上位のノードは、ドキュメントルートでドキュメントルートはXmlDocumentオブジェクト自体
 ※XmlDcumentクラスは、XmlNodeクラスのサブクラス(子クラス)
 
+
 <Artist>東京<!--コメント-->事変</Artist>
-上記の場合、Artist要素を示すXmlNodeの子ノードとして3つのノードが存在する
+上記の場合、Artist要素ノードの子ノードとしてText（東京）、コメントノード（<!--コメント-->）、Text(事変)が存在する
 
 
 〇ノードの種類を取り出す方法
@@ -40,13 +41,15 @@ XmlNode.NodeTypeプロパティ（XmlNodeType列挙体）で取得
 ・Whitespace マークアップ空間
 ・XmlDelection　XML宣言　<?xml version="1.0"?>
 
-ノード名はNameプロパティ
-ノード内容はValueプロパティ
+〇ノードの名前や内容を取り出す方法
+・ノード名は＝XmlNode.Nameプロパティ
+・ノード内容は＝XmlNode.Valueプロパティ
 によって取得できる
 
 Elementノード（要素ノード）から取得するときは
-要素の名前＝Nameプロパティ
-要素の内容＝InterTextプロパティ　※Valueではない
+要素の名前＝XmlNode.Nameプロパティ
+要素の内容（要素ノード内の子ノードすべて）＝XmlNode.InterTextプロパティ　
+※Valueではない
 
 XmlDelectionノード（XML宣言ノード）
 要素の名前＝なし
@@ -63,6 +66,10 @@ TT　Infomation & System Crop.
  
 〇ノードをたどる
 p113
+ノードの親を示す＝XmlNode.ParentNode：取得する値はXmlNode型
+XMLのルート要素を取得=XmlDocument.DcumentElement:取得する値はXmlElement型
+
+
 XmlDocument.DocumentElementプロパティ
 
 XmlDocument myDoc = new XmlDocument();

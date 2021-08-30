@@ -1,0 +1,10 @@
+C:\Users\h-kashiwagi\Desktop\サテライトオフィス\XMLrennsyuu\XMLrennsyuu\bin\Debug\XMLrennsyuu.exe.config
+C:\Users\h-kashiwagi\Desktop\サテライトオフィス\XMLrennsyuu\XMLrennsyuu\bin\Debug\XMLrennsyuu.exe
+C:\Users\h-kashiwagi\Desktop\サテライトオフィス\XMLrennsyuu\XMLrennsyuu\bin\Debug\XMLrennsyuu.pdb
+C:\Users\h-kashiwagi\Desktop\サテライトオフィス\XMLrennsyuu\XMLrennsyuu\obj\Debug\XMLrennsyuu.csproj.AssemblyReference.cache
+C:\Users\h-kashiwagi\Desktop\サテライトオフィス\XMLrennsyuu\XMLrennsyuu\obj\Debug\XMLrennsyuu.Form1.resources
+C:\Users\h-kashiwagi\Desktop\サテライトオフィス\XMLrennsyuu\XMLrennsyuu\obj\Debug\XMLrennsyuu.Properties.Resources.resources
+C:\Users\h-kashiwagi\Desktop\サテライトオフィス\XMLrennsyuu\XMLrennsyuu\obj\Debug\XMLrennsyuu.csproj.GenerateResource.cache
+C:\Users\h-kashiwagi\Desktop\サテライトオフィス\XMLrennsyuu\XMLrennsyuu\obj\Debug\XMLrennsyuu.csproj.CoreCompileInputs.cache
+C:\Users\h-kashiwagi\Desktop\サテライトオフィス\XMLrennsyuu\XMLrennsyuu\obj\Debug\XMLrennsyuu.exe
+C:\Users\h-kashiwagi\Desktop\サテライトオフィス\XMLrennsyuu\XMLrennsyuu\obj\Debug\XMLrennsyuu.pdb
