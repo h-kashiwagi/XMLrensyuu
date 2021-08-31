@@ -37,7 +37,7 @@ namespace XMLrennsyuu
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.albumLabel = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -53,6 +53,7 @@ namespace XMLrennsyuu
             this.goButtan.TabIndex = 0;
             this.goButtan.Text = "読み込み";
             this.goButtan.UseVisualStyleBackColor = true;
+            this.goButtan.Click += new System.EventHandler(this.goButtan_Click);
             // 
             // 曲名
             // 
@@ -71,6 +72,7 @@ namespace XMLrennsyuu
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(251, 109);
             this.listBox1.TabIndex = 2;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -117,14 +119,14 @@ namespace XMLrennsyuu
             this.label5.TabIndex = 7;
             this.label5.Text = "アルバム";
             // 
-            // label6
+            // albumLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(211, 171);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(23, 15);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "\"\"";
+            this.albumLabel.AutoSize = true;
+            this.albumLabel.Location = new System.Drawing.Point(211, 171);
+            this.albumLabel.Name = "albumLabel";
+            this.albumLabel.Size = new System.Drawing.Size(23, 15);
+            this.albumLabel.TabIndex = 8;
+            this.albumLabel.Text = "\"\"";
             // 
             // label7
             // 
@@ -181,7 +183,7 @@ namespace XMLrennsyuu
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.albumLabel);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -207,7 +209,7 @@ namespace XMLrennsyuu
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label albumLabel;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;

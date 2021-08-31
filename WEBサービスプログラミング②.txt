@@ -82,3 +82,14 @@ while (currentNode != null)
 {
     currentNode = currentNode.NextSibling;
  }
+
+
+
+〇目的の要素ノードの取得
+XmlDocument.GetElementsByTagName("要素名")
+リスト型のオブジェクトを返す
+
+
+XmlDocument myDoc = new XmlDocument();
+            XmlNode xNodes = myDoc.DocumentElement; 
+            XmlNodeList timeNodes = xNodes.SelectNodes("//CD//Title");

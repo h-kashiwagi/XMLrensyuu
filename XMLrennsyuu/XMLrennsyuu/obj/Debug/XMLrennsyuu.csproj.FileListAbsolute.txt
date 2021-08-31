@@ -8,3 +8,4 @@ C:\Users\h-kashiwagi\Desktop\サテライトオフィス\XMLrennsyuu\XMLrennsyuu
 C:\Users\h-kashiwagi\Desktop\サテライトオフィス\XMLrennsyuu\XMLrennsyuu\obj\Debug\XMLrennsyuu.csproj.CoreCompileInputs.cache
 C:\Users\h-kashiwagi\Desktop\サテライトオフィス\XMLrennsyuu\XMLrennsyuu\obj\Debug\XMLrennsyuu.exe
 C:\Users\h-kashiwagi\Desktop\サテライトオフィス\XMLrennsyuu\XMLrennsyuu\obj\Debug\XMLrennsyuu.pdb
+C:\Users\h-kashiwagi\Desktop\サテライトオフィス\XMLrennsyuu\XMLrennsyuu\obj\Debug\XMLrennsyuu.Form2.resources

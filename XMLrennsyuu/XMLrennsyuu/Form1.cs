@@ -28,6 +28,7 @@ namespace XMLrennsyuu
             listView1.Items.Clear();
             XmlDocument myDoc = new XmlDocument();
             myDoc.Load(@"C:\Users\h-kashiwagi\Desktop\サテライトオフィス\XMLrennsyuu\XMLrennsyuu\XML\Cdlist.xml");
+            
             XmlNode rootElement = myDoc.DocumentElement;
             
             //ChildNodesプロパティによってXmlNodeListオブジェクトを取得
